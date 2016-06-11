@@ -4,7 +4,7 @@ LIBDIRS=-L/usr/local/lib -L/usr/X11R6/lib
 
 LIBS=-lm -ldc1394_control -lraw1394 -lopencv -lcvaux -lhighgui
 
-INCLUDES=-I/usr/local/include/opencv 
+INCLUDES=-I/usr/include/opencv -I/usr/include/dc1394
 
 DEFINES= -O2
 
