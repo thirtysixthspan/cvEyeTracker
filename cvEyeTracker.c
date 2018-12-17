@@ -422,7 +422,7 @@ static void start_capturing (int * fd, int * n_buffers )
 static struct buffer *init_read (unsigned int buffer_size)
 {
 	struct buffer *buffers = NULL;
-	buffers = calloc (1, sizeof (*buffers));
+	buffers = (buffer*) calloc (1, sizeof (*buffers));
 
 	if (!buffers)
 	{
